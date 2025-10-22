@@ -15,6 +15,7 @@
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xl: 36rem;
@@ -234,11 +235,17 @@
   .z-10 {
     z-index: 10;
   }
+  .z-998 {
+    z-index: 998;
+  }
   .z-999 {
     z-index: 999;
   }
   .container {
     width: 100%;
+    @media (width >= 27rem) {
+      max-width: 27rem;
+    }
     @media (width >= 40rem) {
       max-width: 40rem;
     }
@@ -312,6 +319,9 @@
   .hidden {
     display: none;
   }
+  .inline {
+    display: inline;
+  }
   .table {
     display: table;
   }
@@ -366,14 +376,14 @@
   .w-\[61px\] {
     width: 61px;
   }
-  .w-\[70\%\] {
-    width: 70%;
-  }
   .w-\[79px\] {
     width: 79px;
   }
   .w-\[80\%\] {
     width: 80%;
+  }
+  .w-\[90\%\] {
+    width: 90%;
   }
   .w-\[120px\] {
     width: 120px;
@@ -568,6 +578,9 @@
   }
   .bg-\[\#7000ff\] {
     background-color: #7000ff;
+  }
+  .bg-\[\#989393\] {
+    background-color: #989393;
   }
   .bg-\[\#e5e5ff\] {
     background-color: #e5e5ff;
@@ -782,6 +795,9 @@
   .text-\[\#757575\] {
     color: #757575;
   }
+  .text-black {
+    color: var(--color-black);
+  }
   .text-gray-400 {
     color: var(--color-gray-400);
   }
@@ -995,6 +1011,21 @@
       outline-style: none;
     }
   }
+  .xss\:block {
+    @media (width >= 27rem) {
+      display: block;
+    }
+  }
+  .xss\:flex {
+    @media (width >= 27rem) {
+      display: flex;
+    }
+  }
+  .xss\:hidden {
+    @media (width >= 27rem) {
+      display: none;
+    }
+  }
   .sm\:block {
     @media (width >= 40rem) {
       display: block;
@@ -1023,11 +1054,6 @@
   .md\:block {
     @media (width >= 48rem) {
       display: block;
-    }
-  }
-  .md\:flex {
-    @media (width >= 48rem) {
-      display: flex;
     }
   }
   .md\:hidden {
@@ -1097,11 +1123,6 @@
   .mdd\:hidden {
     @media (width >= 55rem) {
       display: none;
-    }
-  }
-  .mdd\:inline {
-    @media (width >= 55rem) {
-      display: inline;
     }
   }
   .lg\:grid-cols-4 {
