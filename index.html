@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uzum Market</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="shortcut icon" href="./images/Group 2.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      html,
+      body {
+        overflow-x: clip;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <a id="top"></a>
+    <header class="bg-white">
+      <div class="bg-[#f0f2f5]">
+        <div
+          class="max-w-[1920px] mx-auto overflow-x-auto sm:p-0 p-[15px_0px_15px_0px] w-[80%] flex items-center gap-[15px] justify-between"
+        >
+          <div class="flex items-center space-x-6">
+            <div class="flex items-center">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7 11C7 8.23858 9.23858 6 12 6C14.7614 6 17 8.23858 17 11C17 13.2317 15.8079 15.2429 14.5153 16.7262C13.8738 17.4623 13.2212 18.0525 12.7097 18.4561C12.4536 18.6582 12.2375 18.8098 12.0802 18.9082C12.0504 18.9268 12.0237 18.9429 12 18.9567C11.9763 18.9429 11.9496 18.9268 11.9198 18.9082C11.7625 18.8098 11.5464 18.6582 11.2903 18.4561C10.7788 18.0525 10.1262 17.4623 9.48471 16.7262C8.19208 15.2429 7 13.2317 7 11ZM12 5C8.68629 5 6 7.68629 6 11C6 13.5808 7.36827 15.8196 8.73081 17.3832C9.41691 18.1705 10.1156 18.803 10.6709 19.2411C10.9482 19.46 11.1944 19.634 11.3897 19.7561C11.4866 19.8167 11.5778 19.8688 11.6582 19.9076C11.6982 19.9269 11.7428 19.9465 11.7889 19.9623C11.8251 19.9747 11.9044 20 12 20C12.0956 20 12.1749 19.9747 12.2111 19.9623C12.2572 19.9465 12.3018 19.9269 12.3418 19.9076C12.4222 19.8688 12.5134 19.8167 12.6103 19.7561C12.8056 19.634 13.0518 19.46 13.3291 19.2411C13.8844 18.803 14.5831 18.1705 15.2692 17.3832C16.6317 15.8196 18 13.5808 18 11C18 7.68629 15.3137 5 12 5ZM11 11C11 10.4477 11.4477 10 12 10C12.5523 10 13 10.4477 13 11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11ZM12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9Z"
+                  fill="#1F2026"
+                />
+              </svg>
+              <span
+                class="font-normal text-sm leading-[100%] text-[#1f2026] font-family"
+                >Shahar:
+                <span
+                  class="w-[61px] h-[15px] border-b-[#1f2026] border-b border-solid"
+                  >Toshkent</span
+                >
+              </span>
+            </div>
+            <span
+              class="font-medium text-sm leading-[100%] text-[#1f2026] font-family"
+              >Toshpirish punktlari</span
+            >
+          </div>
+          <div
+            class="flex items-center space-x-6 font-medium cursor-pointer text-sm leading-[100%] text-[#4d4f59] font-family"
+          >
+            <span class="hover:text-[#7000ff] transition-colors duration-300"
+              >Uzumda soting</span
+            >
+            <span class="hover:text-[#7000ff] transition-colors duration-300"
+              >Savol-javoblar</span
+            >
+            <span class="hover:text-[#7000ff] transition-colors duration-300"
+              >Buyurtmalarim</span
+            >
+            <div class="flex items-center gap-2">
+              <details id="langSelect" class="relative w-8 h-8 group">
+                <summary class="cursor-pointer list-none">
+                  <img
+                    id="mainFlag"
+                    src="./images/uz.svg"
+                    alt="current flag"
+                    class="w-8 h-8 transition-transform duration-300 hover:scale-110"
+                  />
+                </summary>
+                <div
+                  class="absolute left-0 top-10 bg-white shadow-lg rounded-md flex flex-col gap-2 p-2 z-10"
+                >
+                  <img
+                    src="./images/uz.svg"
+                    alt="Uzbek"
+                    class="w-6 h-6 cursor-pointer hover:scale-110 transition"
+                    onclick="changeLang('./images/uz.svg', 'O‘zbekcha')"
+                  />
+                  <img
+                    src="./images/ru.svg"
+                    alt="Russian"
+                    class="w-6 h-6 cursor-pointer hover:scale-110 transition"
+                    onclick="changeLang('./images/ru.svg', 'Русский')"
+                  />
+                  <img
+                    src="./images/us.svg"
+                    alt="English"
+                    class="w-6 h-6 cursor-pointer hover:scale-110 transition"
+                    onclick="changeLang('./images/us.svg', 'English')"
+                  />
+                </div>
+              </details>
+              <span
+                id="langName"
+                class="font-medium text-sm leading-[286%] text-center text-[#1f2026] font-family"
+                >O‘zbekcha</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-[1920px] mx-auto w-[80%] px-4 py-3 flex gap-[10px] flex-wrap items-center lgg:justify-between justify-center"
+      >
+        <img src="./images/Link.png" alt="" class="h-8" />
+        <button
+          class="rounded w-[120px] cursor-pointer h-10 bg-[#e5e5ff] flex items-center justify-center gap-[10px] transition-all duration-300 group hover:bg-[#7f4dff]"
+        >
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-4 h-4 transition-colors duration-300 group-hover:brightness-[3]"
+          >
+            <path d="M3 1H1V3H3V1Z" fill="#7f4dff" />
+            <path d="M3 5H1V7H3V5Z" fill="#7f4dff" />
+            <path d="M1 9H3V11H1V9Z" fill="#7f4dff" />
+            <path d="M3 13H1V15H3V13Z" fill="#7f4dff" />
+            <path d="M15 1H5V3H15V1Z" fill="#7f4dff" />
+            <path d="M15 5H5V7H15V5Z" fill="#7f4dff" />
+            <path d="M5 9H15V11H5V9Z" fill="#7f4dff" />
+            <path d="M15 13H5V15H15V13Z" fill="#7f4dff" />
+          </svg>
+          <span
+            class="font-medium text-sm leading-[129%] tracking-[0.01em] text-center text-[#7f4dff] font-family transition-colors duration-300 group-hover:text-[#e5e5ff]"
+          >
+            Katalog
+          </span>
+        </button>
+        <div class="flex-1 max-w-xl mx-4">
+          <div class="flex">
+            <input
+              type="text"
+              placeholder="Mahsulotlar va turkumlar izlash"
+              class="w-full px-4 py-2 font-normal text-sm text-[#757575] font-family border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-purple-500"
+            />
+            <button
+              class="bg-[#edeff2] cursor-pointer w-[79px] rounded-r-md h-10 flex items-center justify-center p-2 transition-all duration-300 group hover:bg-[#7f4dff]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 transition-colors duration-300 group-hover:text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div
+            class="flex items-center space-x-2 cursor-pointer group transition-all duration-300 md:space-x-2"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="transition-colors duration-300"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 3C9.79086 3 8 4.79086 8 7V8C8 10.2091 9.79086 12 12 12C14.2091 12 16 10.2091 16 8V7C16 4.79086 14.2091 3 12 3ZM9.5 7C9.5 5.61929 10.6193 4.5 12 4.5C13.3807 4.5 14.5 5.61929 14.5 7V8C14.5 9.38071 13.3807 10.5 12 10.5C10.6193 10.5 9.5 9.38071 9.5 8V7ZM5.50232 19.3686C5.97321 16.2577 9.01803 14.5 12.0022 14.5C14.9858 14.5 18.031 16.2577 18.5019 19.3686C18.5046 19.3866 18.5025 19.3972 18.5 19.4048C18.497 19.4137 18.4903 19.4269 18.4759 19.442C18.4453 19.4741 18.3894 19.5039 18.3171 19.5039H5.68718C5.61487 19.5039 5.55898 19.4741 5.52838 19.442C5.51394 19.4269 5.50726 19.4137 5.50427 19.4048C5.50174 19.3972 5.49961 19.3865 5.50232 19.3686ZM12.0022 13C8.57321 13 4.64037 15.0404 4.01922 19.1441C3.85624 20.2208 4.75727 21.0039 5.68718 21.0039H18.3171C19.247 21.0039 20.148 20.2208 19.985 19.1441C19.3638 15.0404 15.4306 13 12.0022 13Z"
+                fill="#1F2026"
+                class="transition-colors duration-300 group-hover:fill-[#7f4dff]"
+              />
+            </svg>
+            <span
+              class="hidden md:inline font-medium text-sm leading-[100%] text-center text-[#1f2026] font-family transition-colors duration-300 group-hover:text-[#7f4dff]"
+              >Kirish</span
+            >
+          </div>
+          <div
+            class="flex items-center space-x-2 cursor-pointer group transition-all duration-300 md:space-x-2"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="transition-colors duration-300"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.5 5.5C5.26935 5.5 3.5 7.30906 3.5 9.5C3.5 10.4282 3.87684 11.4436 4.5487 12.5105C5.21692 13.5716 6.14148 14.6274 7.15127 15.6219C8.55769 17.007 10.0318 18.1879 11.1708 19.1003C11.4734 19.3427 11.7523 19.5661 12 19.7694C12.2477 19.5661 12.5266 19.3427 12.8292 19.1003C13.9682 18.1879 15.4423 17.007 16.8487 15.6219C17.8585 14.6274 18.7831 13.5716 19.4513 12.5105C20.1232 11.4436 20.5 10.4282 20.5 9.5C20.5 7.30898 18.7314 5.5 16.5 5.5C14.3473 5.5 13.0738 7.20226 12.7262 7.74742C12.3889 8.27655 11.6111 8.27653 11.2738 7.74742C10.9262 7.20225 9.65273 5.5 7.5 5.5ZM2 9.5C2 6.49094 4.43065 4 7.5 4C9.73143 4 11.2249 5.30207 12 6.21581C12.7751 5.30207 14.2686 4 16.5 4C19.5702 4 22 6.49102 22 9.5C22 10.8218 21.4706 12.1189 20.7206 13.3098C19.9669 14.5066 18.954 15.6539 17.9013 16.6906C16.4429 18.1269 14.808 19.4384 13.6502 20.3672C13.1649 20.7565 12.7634 21.0786 12.4939 21.3144C12.2111 21.5619 11.7889 21.5619 11.5061 21.3144C11.2366 21.0786 10.8351 20.7565 10.3498 20.3672C9.19201 19.4384 7.55712 18.1269 6.09873 16.6906C5.04602 15.6539 4.03308 14.5066 3.27942 13.3098C2.52941 12.1189 2 10.8218 2 9.5Z"
+                fill="#1F2026"
+                class="transition-colors duration-300 group-hover:fill-[#7f4dff]"
+              />
+            </svg>
+            <span
+              class="hidden md:inline font-medium text-sm leading-[100%] text-center text-[#1f2026] font-family transition-colors duration-300 group-hover:text-[#7f4dff]"
+              >Saralangan</span
+            >
+          </div>
+          <div
+            class="flex items-center space-x-2 cursor-pointer group transition-all duration-300 md:space-x-2"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="transition-colors duration-300"
+            >
+              <g opacity="0.87">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9 6.5C9 4.88779 10.2402 3.5 12 3.5C13.7598 3.5 15 4.88779 15 6.5V7.5H9V6.5ZM7.5 9V11.5H9V9H15V11.5H16.5V9H18.5V19.75C18.5 20.1642 18.1642 20.5 17.75 20.5H6.25C5.83579 20.5 5.5 20.1642 5.5 19.75V9H7.5ZM7.5 7.5V6.5C7.5 4.11221 9.35984 2 12 2C14.6402 2 16.5 4.11221 16.5 6.5V7.5H19.25H20V8.25V19.75C20 20.9926 18.9926 22 17.75 22H6.25C5.00736 22 4 20.9926 4 19.75V8.25V7.5H4.75H7.5Z"
+                  fill="#1F2026"
+                  class="transition-colors duration-300 group-hover:fill-[#7f4dff]"
+                />
+              </g>
+            </svg>
+            <span
+              class="hidden md:inline font-medium text-sm leading-[100%] text-center text-[#1f2026] font-family transition-colors duration-300 group-hover:text-[#7f4dff]"
+              >Savat</span
+            >
+          </div>
+          <input type="checkbox" id="menu-toggle" class="peer hidden" />
+          <label for="menu-toggle" class="md:hidden text-[30px] cursor-pointer">
+            <i class="fas fa-bars text-[#7000ff]"></i>
+          </label>
+          <div
+            class="fixed top-0 right-0 h-full w-[70%] max-w-[320px] bg-[#7000ff] text-white flex flex-col items-start justify-start pl-[20px] pr-[20px] pt-[60px] pb-[40px] gap-8 transform translate-x-full peer-checked:translate-x-0 transition-transform duration-500 ease-in-out shadow-[0_0_20px_rgba(0,0,0,0.4)] z-999 overflow-y-auto"
+          >
+            <label
+              for="menu-toggle"
+              class="absolute top-6 right-6 text-[30px] sm:text-[38px] md:text-[40px] cursor-pointer transition-opacity duration-300 ease-in-out"
+            >
+              <i class="fas fa-xmark text-white"></i>
+            </label>
+            <div class="flex items-center gap-[10px] whitespace-nowrap">
+              <img src="./images/bts.png.svg" alt="" class="h-5" />
+              <a
+                href="#"
+                class="font-semibold sm:text-[25px] text-[20px] text-white leading-[120%] font-family"
+                >Maktab bozori</a
+              >
+            </div>
+            <div class="flex items-center gap-[10px] whitespace-nowrap">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="24" height="24" fill="url(#pattern0_1_5054)" />
+                <defs>
+                  <pattern
+                    id="pattern0_1_5054"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_1_5054"
+                      transform="scale(0.00195312)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_1_5054"
+                    width="512"
+                    height="512"
+                    preserveAspectRatio="none"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+              <a
+                href="#"
+                class="font-semibold sm:text-[25px] text-[20px] text-white leading-[120%] font-family"
+                >Yozgi savdo</a
+              >
+            </div>
+            <div class="flex items-center gap-[10px] whitespace-nowrap">
+              <img src="./images/school-2.png.svg" alt="" class="h-5" />
+              <a
+                href="#"
+                class="font-semibold sm:text-[25px] text-[20px] text-white leading-[120%] font-family"
+                >Kanselyariya</a
+              >
+            </div>
+            <div class="flex items-center gap-[10px] whitespace-nowrap">
+              <img src="./images/nasiya_fc.png.svg" alt="" class="h-5" />
+              <a
+                href="#"
+                class="font-semibold sm:text-[25px] text-[20px] text-white leading-[120%] font-family"
+                >Nasiya</a
+              >
+            </div>
+            <a
+              href="#"
+              class="font-normal sm:text-[25px] text-[20px] text-white leading-[171%] font-family whitespace-nowrap"
+              >Elektronika</a
+            >
+            <a
+              href="#"
+              class="font-normal sm:text-[25px] text-[20px] text-white leading-[171%] font-family whitespace-nowrap"
+              >Maishiy texnika</a
+            >
+            <a
+              href="#"
+              class="font-normal sm:text-[25px] text-[20px] text-white leading-[171%] font-family whitespace-nowrap"
+              >Kiyim</a
+            >
+            <a
+              href="#"
+              class="font-normal sm:text-[25px] text-[20px] text-white leading-[171%] font-family whitespace-nowrap"
+              >Poyabzallar</a
+            >
+            <a
+              href="#"
+              class="font-normal sm:text-[25px] text-[20px] text-white leading-[171%] font-family whitespace-nowrap"
+              >Aksessuarlar</a
+            >
+            <a
+              href="#"
+              class="font-normal sm:text-[25px] text-[20px] text-white leading-[171%] font-family whitespace-nowrap"
+              >Goʻzallik va parvarish</a
+            >
+            <a
+              href="#"
+              class="font-normal sm:text-[25px] text-[20px] text-whiteleading-[171%] font-family whitespace-nowrap"
+              >Salomatlik</a
+            >
+            <a href="#" class="sm:text-[25px] text-[20px]"
+              >Khasan Best Teacher</a
+            >
+            <a href="#" class="sm:text-[25px] text-[20px]"
+              >Khasan Best Friend</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="max-w-[1920px] mx-auto w-[80%] px-4 pb-3">
+        <nav
+          class="md:flex hidden items-center flex-wrap gap-[20px] justify-center 2xll:justify-between"
+        >
+          <div class="flex items-center gap-[10px] whitespace-nowrap">
+            <img src="./images/bts.png.svg" alt="" class="h-5" />
+            <a
+              href="#"
+              class="font-semibold text-xs leading-[120%] text-[#1f2026] font-family hover:text-[#7000ff] transition-colors duration-300"
+              >Maktab bozori</a
+            >
+          </div>
+          <div class="flex items-center gap-[10px] whitespace-nowrap">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="24" height="24" fill="url(#pattern0_1_5054)" />
+              <defs>
+                <pattern
+                  id="pattern0_1_5054"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_1_5054"
+                    transform="scale(0.00195312)"
+                  />
+                </pattern>
+                <image
+                  id="image0_1_5054"
+                  width="512"
+                  height="512"
+                  preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+            <a
+              href="#"
+              class="font-semibold text-xs leading-[120%] text-[#1f2026] font-family hover:text-[#7000ff] transition-colors duration-300"
+              >Yozgi savdo</a
+            >
+          </div>
+          <div class="flex items-center gap-[10px] whitespace-nowrap">
+            <img src="./images/school-2.png.svg" alt="" class="h-5" />
+            <a
+              href="#"
+              class="font-semibold text-xs leading-[120%] text-[#1f2026] font-family hover:text-[#7000ff] transition-colors duration-300"
+              >Kanselyariya</a
+            >
+          </div>
+          <div class="flex items-center gap-[10px] whitespace-nowrap">
+            <img src="./images/nasiya_fc.png.svg" alt="" class="h-5" />
+            <a
+              href="#"
+              class="font-semibold text-xs leading-[120%] text-[#1f2026] font-family hover:text-[#7000ff] transition-colors duration-300"
+              >Nasiya</a
+            >
+          </div>
+          <a
+            href="#"
+            class="font-normal text-sm leading-[171%] text-[#4d4f59] font-family whitespace-nowrap hover:text-[#7000ff] transition-colors duration-300"
+            >Elektronika</a
+          >
+          <a
+            href="#"
+            class="font-normal text-sm leading-[171%] text-[#4d4f59] font-family whitespace-nowrap hover:text-[#7000ff] transition-colors duration-300"
+            >Maishiy texnika</a
+          >
+          <a
+            href="#"
+            class="font-normal text-sm leading-[171%] text-[#4d4f59] font-family whitespace-nowrap hover:text-[#7000ff] transition-colors duration-300"
+            >Kiyim</a
+          >
+          <a
+            href="#"
+            class="font-normal text-sm leading-[171%] text-[#4d4f59] font-family whitespace-nowrap hover:text-[#7000ff] transition-colors duration-300"
+            >Poyabzallar</a
+          >
+          <a
+            href="#"
+            class="font-normal text-sm leading-[171%] text-[#4d4f59] font-family whitespace-nowrap hover:text-[#7000ff] transition-colors duration-300"
+            >Aksessuarlar</a
+          >
+          <a
+            href="#"
+            class="font-normal text-sm leading-[171%] text-[#4d4f59] font-family whitespace-nowrap hover:text-[#7000ff] transition-colors duration-300"
+            >Goʻzallik va parvarish</a
+          >
+          <a
+            href="#"
+            class="font-normal text-sm leading-[171%] text-[#4d4f59] font-family whitespace-nowrap hover:text-[#7000ff] transition-colors duration-300"
+            >Salomatlik</a
+          >
+          <details
+            class="group relative font-normal text-sm leading-[171%] text-[#4d4f59] font-family"
+          >
+            <summary
+              class="cursor-pointer flex items-center gap-1 transition-colors whitespace-nowrap hover:text-[#7000ff] duration-300"
+            >
+              Yana
+              <i
+                class="fa-solid fa-chevron-down text-[12px] transition-transform duration-200 group-open:rotate-180"
+              ></i>
+            </summary>
+            <ul
+              class="absolute left-0 mt-2 whitespace-nowrap w-[180px] bg-white shadow-md rounded-md opacity-0 group-open:opacity-100 transition-opacity duration-300 p-3 z-10"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-1 px-2 hover:text-[#7000ff] transition-colors duration-300"
+                  >Khasan Best Teacher</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-1 px-2 hover:text-[#7000ff] transition-colors duration-300"
+                  >Khasan Best Friend</a
+                >
+              </li>
+            </ul>
+          </details>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="mt-[30px]">
+        <div
+          data-aos="fade-up"
+          class="max-w-[1920px] mx-auto w-[80%] flex justify-center"
+        >
+          <div
+            class="swiper mySwiper w-full max-w-[1200px] rounded-[10px] overflow-hidden"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="./images/Link → main_page_banner.jpg.png"
+                  alt="Banner 1"
+                  class="w-[1240px] h-[413px] object-cover"
+                />
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="./images/div.swiper-container.png"
+                  alt="Banner 2"
+                  class="w-[1240px] h-[413px] object-cover"
+                />
+              </div>
+              <div class="swiper-slide flex justify-center">
+                <img
+                  src="./images/photo_2025-02-27_09-44-12.jpg"
+                  alt="Banner 3"
+                  class="w-[1240px] h-[413px] object-cover object-[center_40%]"
+                />
+              </div>
+            </div>
+
+            <!-- Навигация -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1920px] mx-auto w-[80%] py-10">
+        <h2
+          class="text-2xl font-semibold mb-8 text-center text-gray-800"
+          data-aos="fade-up"
+        >
+          Mahsulotlar
+        </h2>
+        <div
+          id="product-list"
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"
+        ></div>
+      </section>
+    </main>
+    <footer class="bg-white pt-10 pb-6">
+      <div class="max-w-[1920px] w-[80%] mx-auto px-4">
+        <div class="flex justify-between gap-8">
+          <div class="w-full md:w-auto">
+            <h3
+              class="font-medium text-sm leading-[136%] text-[#1f2026] font-family mb-3"
+            >
+              Biz haqimizda
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="font-normal text-xs leading-[133%] text-[#8b8e99] font-second-family hover:text-[#7000ff] transition-colors"
+                >
+                  Topshirish punktlari
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="font-normal text-xs leading-[133%] text-[#8b8e99] font-second-family hover:text-[#7000ff] transition-colors"
+                >
+                  Vakansiyalar
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-auto">
+            <h3 class="font-medium text-sm leading-[136%] text-[#1f2026] mb-3">
+              Foydalanuvchilarga
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="font-normal text-xs leading-[133%] text-[#8b8e99] font-second-family hover:text-[#7000ff] transition-colors"
+                >
+                  Biz bilan bog'lanish
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="font-normal text-xs leading-[133%] text-[#8b8e99] font-second-family hover:text-[#7000ff] transition-colors"
+                >
+                  Savol-Javob
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-auto sm:block hidden">
+            <h3 class="font-medium text-sm leading-[136%] text-[#1f2026] mb-3">
+              Tadbirkorlarga
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="font-normal text-xs leading-[133%] text-[#8b8e99] font-second-family hover:text-[#7000ff] transition-colors"
+                >
+                  Sotuvchi kabinetiga kirish
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-auto hidden md:block">
+            <h3 class="font-medium text-sm leading-[136%] text-[#1f2026] mb-3">
+              Ilovanı yuklab olish
+            </h3>
+            <div class="flex flex-wrap items-center gap-4 mb-6">
+              <a
+                href="https://www.apple.com/app-store/  "
+                class="block transition-transform duration-300 hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./images/Download_on_the_App_Store_Badge.svg.webp"
+                  alt="AppStore"
+                  class="h-8"
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps?hl=ru"
+                class="block transition-transform duration-300 hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./images/Link32.png" alt="Google Play" class="h-8" />
+              </a>
+            </div>
+            <h3 class="font-medium text-sm leading-[136%] text-[#1f2026] mb-3">
+              Uzum ijtimoiy tarmoqlarda
+            </h3>
+            <div class="flex flex-wrap items-center gap-4">
+              <a
+                href="  https://www.instagram.com/  "
+                class="block transition-transform duration-300 hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_1_4935"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="36"
+                    height="36"
+                  >
+                    <path d="M0 0H36V36H0V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_1_4935)">
+                    <path
+                      d="M18 0C33 0 36 3 36 18C36 33 33 36 18 36C3 36 0 33 0 18C0 3 3 0 18 0Z"
+                      fill="url(#paint0_linear_1_4935)"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18 9.3915C20.8035 9.3915 21.135 9.40275 22.2428 9.453C23.2665 9.4995 23.8223 9.6705 24.1927 9.8145C24.6825 10.005 25.0328 10.2323 25.4002 10.5998C25.7677 10.9673 25.995 11.3168 26.1855 11.8073C26.3288 12.177 26.5005 12.7335 26.5462 13.7573C26.5972 14.8643 26.6077 15.1957 26.6077 18C26.6077 20.8035 26.5972 21.135 26.5462 22.2428C26.4998 23.2665 26.3287 23.8223 26.1847 24.1927C26.0167 24.6488 25.7486 25.0613 25.4002 25.4002C25.0328 25.7677 24.6825 25.995 24.1927 26.1855C23.8223 26.3288 23.2665 26.5005 22.2428 26.5462C21.1357 26.5972 20.8035 26.6077 18 26.6077C15.1957 26.6077 14.8643 26.5972 13.7573 26.5462C12.7335 26.4998 12.177 26.3287 11.8073 26.1847C11.3513 26.0166 10.9387 25.7486 10.5998 25.4002C10.2509 25.0616 9.98254 24.649 9.8145 24.1927C9.6705 23.8223 9.4995 23.2665 9.453 22.2428C9.40275 21.1357 9.3915 20.8035 9.3915 18C9.3915 15.1957 9.40275 14.8643 9.453 13.7573C9.4995 12.7335 9.6705 12.177 9.8145 11.8073C9.98286 11.3512 10.2512 10.9386 10.5998 10.5998C10.9384 10.2509 11.351 9.98256 11.8073 9.8145C12.177 9.6705 12.7335 9.4995 13.7573 9.453C14.8643 9.40275 15.1957 9.3915 18 9.3915ZM18 7.5C15.1485 7.5 14.79 7.512 13.6702 7.56375C12.5527 7.614 11.79 7.79175 11.1218 8.05125C10.421 8.31479 9.78619 8.72817 9.26175 9.2625C8.72771 9.78703 8.3146 10.4218 8.05125 11.1225C7.79175 11.79 7.614 12.5535 7.56375 13.6702C7.51125 14.7907 7.5 15.1477 7.5 18C7.5 20.8515 7.512 21.2092 7.56375 22.329C7.614 23.4465 7.79175 24.2092 8.05125 24.8775C8.31975 25.5682 8.679 26.154 9.2625 26.7375C9.78702 27.2717 10.4218 27.6851 11.1225 27.9487C11.79 28.2083 12.5535 28.386 13.671 28.4363C14.7908 28.488 15.1485 28.5 18 28.5C20.8515 28.5 21.21 28.488 22.3298 28.437C23.4473 28.386 24.2108 28.2083 24.8783 27.9487C25.579 27.6852 26.2138 27.2718 26.7383 26.7375C27.2723 26.2129 27.6854 25.5782 27.9487 24.8775C28.2083 24.21 28.386 23.4465 28.437 22.329C28.488 21.2092 28.5007 20.8515 28.5007 18C28.5007 15.1485 28.488 14.79 28.437 13.6702C28.386 12.5527 28.209 11.7893 27.9495 11.1218C27.6858 10.4209 27.2721 9.78609 26.7375 9.26175C26.2129 8.72775 25.5782 8.31464 24.8775 8.05125C24.21 7.79175 23.4465 7.614 22.329 7.56375C21.2092 7.51125 20.8515 7.5 18 7.5ZM18 12.6075C16.57 12.6075 15.1986 13.1756 14.1875 14.1867C13.1763 15.1979 12.6083 16.5693 12.6083 17.9993C12.6083 19.4292 13.1763 20.8006 14.1875 21.8118C15.1986 22.8229 16.57 23.391 18 23.391C19.4189 23.3743 20.7739 22.7989 21.7714 21.7896C22.7688 20.7804 23.3282 19.4186 23.3282 17.9996C23.3282 16.5807 22.7688 15.2189 21.7714 14.2096C20.7739 13.2004 19.4189 12.625 18 12.6083V12.6075ZM18 21.4995C17.0718 21.4995 16.1816 21.1308 15.5252 20.4744C14.8689 19.8181 14.5001 18.9278 14.5001 17.9996C14.5001 17.0714 14.8689 16.1812 15.5252 15.5248C16.1816 14.8685 17.0718 14.4998 18 14.4998C18.9282 14.4998 19.8184 14.8685 20.4748 15.5248C21.1311 16.1812 21.4999 17.0714 21.4999 17.9996C21.4999 18.9278 21.1311 19.8181 20.4748 20.4744C19.8184 21.1308 18.9282 21.4995 18 21.4995ZM24.8647 12.3945C24.8647 12.7287 24.732 13.0492 24.4957 13.2855C24.2594 13.5218 23.9389 13.6545 23.6047 13.6545C23.2706 13.6545 22.9501 13.5218 22.7138 13.2855C22.4775 13.0492 22.3447 12.7287 22.3447 12.3945C22.3447 12.0603 22.4775 11.7398 22.7138 11.5035C22.9501 11.2672 23.2706 11.1345 23.6047 11.1345C23.9389 11.1345 24.2594 11.2672 24.4957 11.5035C24.732 11.7398 24.8647 12.0603 24.8647 12.3945Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1_4935"
+                      x1="32.1075"
+                      y1="4.242"
+                      x2="3.783"
+                      y2="31.8638"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#BA00B2" />
+                      <stop offset="0.5" stop-color="#F40000" />
+                      <stop offset="1" stop-color="#FFA800" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+              <a
+                href="https://t.me/Tolko_Nenado  "
+                class="block transition-transform duration-300 hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_1_4942"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="36"
+                    height="36"
+                  >
+                    <path d="M0 0H36V36H0V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_1_4942)">
+                    <path
+                      d="M18 0C33 0 36 3 36 18C36 33 33 36 18 36C3 36 0 33 0 18C0 3 3 0 18 0Z"
+                      fill="url(#paint0_linear_1_4942)"
+                    />
+                    <path
+                      d="M8.844 17.8493C14.091 15.5633 17.5905 14.0558 19.341 13.3276C24.3398 11.2486 25.3785 10.8871 26.0558 10.8751C26.2043 10.8728 26.5373 10.9096 26.7533 11.0851C26.9348 11.2321 26.9858 11.4323 27.009 11.5726C27.033 11.7121 27.063 12.0316 27.039 12.2806C26.769 15.1268 25.596 22.0343 24.9998 25.2218C24.7478 26.5703 24.2513 27.0226 23.7698 27.0668C22.7243 27.1636 21.9308 26.3768 20.9183 25.7123C19.3343 24.6743 18.4395 24.0278 16.9013 23.0146C15.1238 21.8431 16.2765 21.1996 17.289 20.1473C17.5545 19.8721 22.1595 15.6833 22.2488 15.3031C22.26 15.2558 22.2705 15.0781 22.1655 14.9851C22.0605 14.8913 21.9045 14.9236 21.7928 14.9491C21.6338 14.9851 19.1025 16.6576 14.1998 19.9666C13.4813 20.4608 12.831 20.7008 12.2483 20.6881C11.6055 20.6746 10.3688 20.3251 9.45 20.0258C8.32275 19.6598 7.4265 19.4656 7.5045 18.8438C7.545 18.5198 7.992 18.1883 8.844 17.8493Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1_4942"
+                      x1="18"
+                      y1="0"
+                      x2="18"
+                      y2="35.733"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#2AABEE" />
+                      <stop offset="1" stop-color="#229ED9" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/  "
+                class="block transition-transform duration-300 hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_1_4949"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="36"
+                    height="36"
+                  >
+                    <path d="M0 0H36V36H0V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_1_4949)">
+                    <path
+                      d="M18 0C33 0 36 3 36 18C36 33 33 36 18 36C3 36 0 33 0 18C0 3 3 0 18 0Z"
+                      fill="#1877F2"
+                    />
+                    <path
+                      d="M24.8895 23.2035L25.6875 18H20.6955V14.6235C20.6955 13.2 21.393 11.8125 23.6287 11.8125H25.8982V7.383C25.8982 7.383 23.8387 7.03125 21.8693 7.03125C17.7578 7.03125 15.0705 9.52275 15.0705 14.034V18H10.5V23.2035H15.0705V35.9602C16.125 36 16.125 36 17.883 36C18.84 36 19.875 36 20.6955 35.9602V23.2028L24.8895 23.2035Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/  "
+                class="block transition-transform duration-300 hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_1_4956"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="36"
+                    height="36"
+                  >
+                    <path d="M0 0H36V36H0V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_1_4956)">
+                    <path
+                      d="M18 0C33 0 36 3 36 18C36 33 33 36 18 36C3 36 0 33 0 18C0 3 3 0 18 0Z"
+                      fill="#FF0000"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M27.3765 10.2427C27.8818 10.3736 28.3439 10.635 28.7164 11.0007C29.0889 11.3663 29.3588 11.8235 29.499 12.3262C30 14.1645 30 18 30 18C30 18 30 21.8355 29.4983 23.6737C29.3581 24.1765 29.0883 24.6335 28.7159 24.9992C28.3436 25.3648 27.8817 25.6262 27.3765 25.7572C25.5045 26.25 18 26.25 18 26.25C18 26.25 10.4948 26.25 8.6235 25.7572C8.11822 25.6263 7.65621 25.3649 7.28371 24.9993C6.91121 24.6336 6.6413 24.1765 6.501 23.6737C6 21.8355 6 18 6 18C6 18 6 14.1645 6.50175 12.3262C6.64199 11.8236 6.91179 11.3666 7.28415 11.0009C7.6565 10.6353 8.11836 10.3738 8.6235 10.2427C10.494 9.75 18 9.75 18 9.75C18 9.75 25.5045 9.75 27.3765 10.2427ZM21.75 18L15.75 21.5625V14.4375L21.75 18Z"
+                      fill="white"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-auto block sm:hidden mt-[20px]">
+          <h3 class="font-medium text-sm leading-[136%] text-[#1f2026] mb-3">
+            Tadbirkorlarga
+          </h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="font-normal text-xs leading-[133%] text-[#8b8e99] font-second-family hover:text-[#7000ff] transition-colors"
+              >
+                Sotuvchi kabinetiga kirish
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full md:w-auto md:hidden mt-[20px] block">
+          <h3
+            class="font-medium text-sm text-center leading-[136%] text-[#1f2026] mb-3"
+          >
+            Ilovanı yuklab olish
+          </h3>
+          <div class="flex flex-wrap justify-center items-center gap-4 mb-6">
+            <a
+              href="https://www.apple.com/app-store/  "
+              class="block transition-transform duration-300 hover:scale-105"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/Download_on_the_App_Store_Badge.svg.webp"
+                alt="AppStore"
+                class="h-8"
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/apps?hl=ru"
+              class="block transition-transform duration-300 hover:scale-105"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/Link32.png" alt="Google Play" class="h-8" />
+            </a>
+          </div>
+          <h3
+            class="font-medium text-sm text-center leading-[136%] text-[#1f2026] mb-3"
+          >
+            Uzum ijtimoiy tarmoqlarda
+          </h3>
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="  https://www.instagram.com/  "
+              class="block transition-transform duration-300 hover:scale-105"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/Link → SVG.png" alt="" />
+            </a>
+            <a
+              href="https://t.me/Tolko_Nenado  "
+              class="block transition-transform duration-300 hover:scale-105"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./images/Link → SVG2.png" alt="" />
+            </a>
+            <a
+              href="https://www.facebook.com/  "
+              class="block transition-transform duration-300 hover:scale-105"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_1_4949"
+                  style="mask-type: luminance"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="36"
+                  height="36"
+                >
+                  <path d="M0 0H36V36H0V0Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_1_4949)">
+                  <path
+                    d="M18 0C33 0 36 3 36 18C36 33 33 36 18 36C3 36 0 33 0 18C0 3 3 0 18 0Z"
+                    fill="#1877F2"
+                  />
+                  <path
+                    d="M24.8895 23.2035L25.6875 18H20.6955V14.6235C20.6955 13.2 21.393 11.8125 23.6287 11.8125H25.8982V7.383C25.8982 7.383 23.8387 7.03125 21.8693 7.03125C17.7578 7.03125 15.0705 9.52275 15.0705 14.034V18H10.5V23.2035H15.0705V35.9602C16.125 36 16.125 36 17.883 36C18.84 36 19.875 36 20.6955 35.9602V23.2028L24.8895 23.2035Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a
+              href="https://www.youtube.com/  "
+              class="block transition-transform duration-300 hover:scale-105"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_1_4956"
+                  style="mask-type: luminance"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="36"
+                  height="36"
+                >
+                  <path d="M0 0H36V36H0V0Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_1_4956)">
+                  <path
+                    d="M18 0C33 0 36 3 36 18C36 33 33 36 18 36C3 36 0 33 0 18C0 3 3 0 18 0Z"
+                    fill="#FF0000"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M27.3765 10.2427C27.8818 10.3736 28.3439 10.635 28.7164 11.0007C29.0889 11.3663 29.3588 11.8235 29.499 12.3262C30 14.1645 30 18 30 18C30 18 30 21.8355 29.4983 23.6737C29.3581 24.1765 29.0883 24.6335 28.7159 24.9992C28.3436 25.3648 27.8817 25.6262 27.3765 25.7572C25.5045 26.25 18 26.25 18 26.25C18 26.25 10.4948 26.25 8.6235 25.7572C8.11822 25.6263 7.65621 25.3649 7.28371 24.9993C6.91121 24.6336 6.6413 24.1765 6.501 23.6737C6 21.8355 6 18 6 18C6 18 6 14.1645 6.50175 12.3262C6.64199 11.8236 6.91179 11.3666 7.28415 11.0009C7.6565 10.6353 8.11836 10.3738 8.6235 10.2427C10.494 9.75 18 9.75 18 9.75C18 9.75 25.5045 9.75 27.3765 10.2427ZM21.75 18L15.75 21.5625V14.4375L21.75 18Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-200 mt-8 pt-4 flex flex-col items-start gap-3 md:flex-row md:items-center md:justify-between md:gap-2"
+        >
+          <div
+            class="flex flex-col gap-2 md:flex-row md:gap-4 font-second-family"
+          >
+            <a
+              href="#"
+              class="font-medium text-sm leading-[129%] text-[#1f2026] hover:text-[#7000ff] transition-colors"
+            >
+              Maxfiylik kelishuvi
+            </a>
+            <a
+              href="#"
+              class="font-medium text-sm leading-[129%] text-[#1f2026] hover:text-[#7000ff] transition-colors"
+            >
+              Foydalanuvchi kelishuvi
+            </a>
+            <span class="font-normal text-[11px] leading-[127%] text-[#7e818c]">
+              ©2024 IK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar
+              himoyalangan»
+            </span>
+          </div>
+          <a
+            href="#top"
+            class="w-10 h-10 bg-[#7f4dff] rounded-full flex items-center justify-center text-white hover:bg-[#6e3fe0] transition-colors fixed bottom-5 right-5"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 15l7-7 7 7"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      function changeLang(flagSrc, langText) {
+        const mainFlag = document.getElementById("mainFlag");
+        const langName = document.getElementById("langName");
+        const langSelect = document.getElementById("langSelect");
+        if (mainFlag) mainFlag.src = flagSrc;
+        if (langName) langName.textContent = langText;
+        if (langSelect) langSelect.removeAttribute("open");
+      }
+    </script>
+    <script>
+      async function loadProducts() {
+        const res = await fetch("https://fakestoreapi.com/products");
+        const products = await res.json();
+        const container = document.getElementById("product-list");
+
+        products.forEach((product) => {
+          const price = Math.round(product.price * 12000);
+          const monthly = Math.round(price / 9);
+
+          const card = document.createElement("div");
+          card.className =
+            "bg-white rounded-[20px] shadow-sm hover:shadow-md transition-all p-3 relative flex flex-col";
+          card.setAttribute("data-aos", "fade-up");
+
+          card.innerHTML = `
+            <div class="relative">
+              <img src="${product.image}" alt="${product.title}"
+                   class="w-full h-[220px] object-contain bg-[#f3f3f3] rounded-[16px] mb-3" />
+              <button class="absolute top-3 right-3 text-gray-400 hover:text-[#7000ff]">
+                <i class="fa-regular cursor-pointer fa-heart text-[20px]"></i>
+              </button>
+            </div>
+            <div class="flex gap-2 mb-2">
+              <span class="font-medium text-[10px] leading-[140%] text-white bg-[#ff3090] font-family px-2 py-[2px] flex items-center justify-center rounded-full">Aksiya</span>
+              <span class="text-[12px] px-2 py-[2px] bg-[#2d005f] text-white rounded-full">Original</span>
+            </div>
+
+            <h3 class="font-normal text-xs leading-[120%] text-[#1f2026] font-family mb-1">${
+              product.title
+            }</h3>
+
+            <div class="flex items-center gap-1 font-light text-[11px] leading-[100%] text-[#7e818c] font-family mb-2">
+              <i class="fa-solid fa-star text-yellow-400"></i>
+              <span>${product.rating?.rate ?? 4.5}</span>
+              <span class="text-[#7e818c]">(${
+                product.rating?.count ?? 100
+              } sharhlar)</span>
+            </div>
+
+            <div class="font-normal text-xs leading-[133%] text-[#1f1f26] flex items-center justify-start font-second-family bg-[#ff0] p-[2px_0px_0px_5px] rounded mb-2">
+              ${monthly.toLocaleString("uz-UZ")} so'm/oyiga
+            </div>
+
+            <div class="flex items-center justify-between mt-auto">
+              <div>
+                <div class="font-normal text-[11px] leading-[143%] line-through text-[#7e818c] font-family">${(
+                  price * 1.1
+                ).toLocaleString("uz-UZ")}</div>
+                <div class="font-medium text-sm leading-[120%] text-[#1f2026] font-family">${price.toLocaleString(
+                  "uz-UZ"
+                )} so'm</div>
+              </div>
+              <button class="border border-gray-300 rounded-full w-[36px] h-[36px] flex items-center justify-center hover:bg-gray-100">
+                <i class="fa-solid fa-bag-shopping text-[16px] text-gray-700"></i>
+              </button>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      }
+      loadProducts();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: "ease",
+      });
+    </script>
+  </body>
+</html>

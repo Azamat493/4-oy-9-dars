@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --font-family: "Inter", sans-serif;
+  --font-second-family: "Roboto", sans-serif;
+  --breakpoint-lgg: 65.3125rem; /* 1045px */
+  --breakpoint-2xll: 99.875rem; /* 1598px */
+}
